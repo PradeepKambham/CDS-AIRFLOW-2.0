@@ -3,7 +3,7 @@ resource "aws_vpc" "main" {
 }
 
 resource "aws_subnet" "webserver" {
-  vpc_id     = "${local.vpc_id}"
+  vpc_id     = aws_vpc.main.id
   cidr_block = var.subnet_cidr_block
 
   tags = {
