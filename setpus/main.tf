@@ -7,7 +7,7 @@ provider "aws" {
 
 
 module "pradeep_webserver" {
-  source = "/modules/ec2"
+  source = "../modules/ec2"
   vpc_id= aws_vpc.main.id
   vpc_cidr_block="10.0.0.0/16"
   subnet_cidr_block="10.0.1.0/24"
