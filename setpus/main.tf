@@ -4,7 +4,9 @@ provider "aws" {
   profile                 = "customprofile"
 }
 
-
+resource "aws_vpc" "main" {
+  cidr_block ="10.0.0.0/16"
+}
 
 module "pradeep_webserver" {
   source = "../modules/ec2"
