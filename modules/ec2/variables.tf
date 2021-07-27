@@ -1,13 +1,3 @@
-variable "vpc_id" {
-  type=string
-}
-
-variable "vpc_cidr"{}
-
-variable "subnet_cidr_block" {
-   type = string
-  description = "subnet cidr_block"
-}
 
 variable "ami" {
   type = string
@@ -23,3 +13,7 @@ variable "webserver_name" {
   description = "webserver_name"
 }
 
+variable "subnet_id" {
+  type = string
+  description = "subnet_id"
+}
