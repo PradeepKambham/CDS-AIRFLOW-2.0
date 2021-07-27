@@ -1,13 +1,9 @@
-variable "vpc_id" {
-  type = string
-  description = "vpc_id"
-}
 
 variable "vpc_cidr_block" {
-  type=string
-  description = "vpc_cidr_block"
+  type = string
+  description = "vpc_cidr_blok"
+  
 }
-
 variable "subnet_cidr_block" {
    type = string
   description = "subnet cidr_block"
