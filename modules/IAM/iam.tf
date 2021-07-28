@@ -20,7 +20,7 @@ output "ec2_policy" {
 }
 
 output "ec2_profile" {
-  value = "${aws_iam_instance_profile.ec2_profile.id}"
+  value = "${aws_iam_instance_profile.ec2_profile.name}"
 }
 
 output "ec2_role_name" {
