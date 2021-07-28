@@ -17,3 +17,7 @@ variable "subnet_id" {
   type = string
   description = "subnet_id"
 }
+
+variable "ec2_profile" {
+  
+}
